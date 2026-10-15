@@ -84,7 +84,7 @@ Výstup AI kontroluje kód: platný JSON, popis 2–3 vety, presne 3 príležito
 
 ## Testované aj mimo zadania
 
-Aby riešenie fungovalo pre akúkoľvek slovenskú firmu, nielen pre tri príklady, kód som pustil aj na ďalšie typy webov:
+Mojou podmienkou bolo, aby riešenie fungovalo pre akúkoľvek slovenskú firmu, nielen pre tri príklady. Počas vývoja preto AI asistent spúšťal kód cez lokálny testovací stend aj na ďalších typoch webov:
 
 | Web | Typ | Výsledok |
 |---|---|---|
@@ -113,7 +113,7 @@ Z toho vznikla štruktúra workflow – poradie krokov, statusy, stĺpce tabuľk
 
 **AI (Claude Code) som potom použil ako rýchleho kolegu na implementáciu:** na prieskum testovacích webov a RPO API (kde je IČO, v akom formáte, ako sa správa vyhľadávanie), na písanie a ladenie kódu Code nód, na lokálny testovací stend, ktorý spúšťa kód v rovnakom sandboxe ako n8n, a na testovanie na ďalších reálnych weboch.
 
-**Výsledky som priebežne kontroloval a rozhodoval o ďalších krokoch.** Podmienkou bolo, aby riešenie fungovalo pre akúkoľvek firmu, nielen pre tri príklady – preto testy na e-shopoch, živnostníkovi, verejnej inštitúcii či webe za Cloudflare. Práve tam sa ukázalo, že vyhľadávanie v RPO podľa názvu je zradné (profesia.sk), a vzniklo pravidlo presnej zhody aj s právnou formou a bývalými názvami. Po ostrých behoch som výstupy prečítal očami obchodníka a nechal ich upraviť: nápady sa musia opierať o konkrétne fakty z webu a nesmú navrhovať to, čo firma už má, e-mail je zdvorilejší a plnší (90–120 slov), opakované spustenie preskočí hotové firmy a v tabuľke nevznikajú duplicity.
+**Rozhodnutia a kontrola výsledkov ostali na mne.** Stanovil som podmienku, že riešenie musí fungovať pre akúkoľvek firmu, nielen pre tri príklady. Testy na ďalších weboch (e-shopy, živnostník, verejná inštitúcia, web za Cloudflare) preto spúšťal AI asistent cez lokálny stend – pri nich sa ukázalo, že vyhľadávanie v RPO podľa názvu je zradné (profesia.sk), a pribudlo pravidlo presnej zhody aj s právnou formou a bývalými názvami. Ostré behy na troch testovacích weboch som spúšťal sám v n8n a výstupy som posudzoval očami obchodníka. Z toho vzišli úpravy: zdvorilejší a plnší e-mail (90–120 slov) a kontrola už spracovaných firiem, aby sa nemíňali tokeny a v tabuľke nevznikali duplicity. AI navrhla aj sprísnenie nápadov – musia vychádzať z konkrétnych faktov z webu a nesmú navrhovať to, čo firma už má – a ja som ho odsúhlasil.
 
 **Výsledok:** AI mi ušetrila najmä čas pri písaní a testovaní kódu. O tom, *čo* sa rieši, *ako* a čo je pre obchodníka dosť dobré, som rozhodoval ja. Rovnaký princíp platí aj v samotnom riešení: AI tam, kde pridáva hodnotu (texty), kód a register tam, kde musí platiť presnosť.
 
