@@ -59,13 +59,13 @@ Jedno volanie, structured output so strict JSON schémou. Poradie polí určuje,
 
 Pravidlá v prompte: len fakty z podkladov, IČO nespomínať, nenavrhovať čo firma už má, žiadne všeobecné zdôvodnenia („na webe sú kontakty“), chatbot len pri reálne opakovaných otázkach, každá príležitosť = spúšťač → čo robí AI → výsledok. E-mail: vykanie, prvá osoba množného čísla, štruktúra predstavenie → konkrétne pozorovanie → jeden nápad s úsporou času → nezáväzné pozvanie na 15-minútový hovor → poďakovanie.
 
-Validácia kódom: platný JSON, popis 2–3 vety (skratky ako „s. r. o.“ sa nerátajú ako koniec vety), presne 3 príležitosti so všetkými poľami, náročnosť ∈ {nízka, stredná, vysoká}, e-mail 90–120 slov. Pri probléme jedna opravná požiadavka; opravená verzia sa použije, len ak nie je horšia (e-mail nad 120 slov je tvrdé porušenie, kratší ako 90 len informácia).
+Validácia kódom: platný JSON, popis 2–3 vety (skratky ako „s. r. o.“ sa nerátajú ako koniec vety), presne 3 príležitosti so všetkými poľami, náročnosť ∈ {nízka, stredná, vysoká}, e-mail 90–120 slov. Štýl: e-mail bez hodnotiacich fráz („skvelé“, „veľmi zaujímavé“…) a dôsledne v množnom čísle („ďakujeme“, nie „ďakujem“), zdôvodnenie nápadu nesmie byť všeobecné („na webe sú kontaktné údaje“, „firmu možno kontaktovať“). Pri probléme jedna opravná požiadavka; opravená verzia sa použije, len ak nie je horšia – váhy: e-mail nad 120 slov 100, iné porušenie zadania 50, štýl 5, kratší e-mail 1. Čo ostane po oprave, je v `chyby[]` (`email_too_long`, `ai_output_invalid`, `ai_style`, `email_too_short`).
 
 ## Statusy a upozornenia
 
 Status je najvážnejší problém v poradí `internal_error` › `invalid_domain` › `web_unreachable` › `ai_error` › `rpo_timeout` › `multiple_matches` › `rpo_not_found` › `ico_not_found_on_web` › `ok`. Všetky problémy sú v `chyby[]` s kódom, závažnosťou, slovenskou správou a detailom.
 
-Upozornenia (status ostáva): `multiple_ico_on_web`, `ico_invalid_checksum`, `name_mismatch`, `name_changed`, `company_terminated`, `low_web_content`, `email_too_long`, `email_too_short`, `ai_output_invalid`, `jina_fallback`, `rpo_entity_unavailable`.
+Upozornenia (status ostáva): `multiple_ico_on_web`, `ico_invalid_checksum`, `name_mismatch`, `name_changed`, `company_terminated`, `low_web_content`, `email_too_long`, `email_too_short`, `ai_output_invalid`, `ai_style`, `jina_fallback`, `rpo_entity_unavailable`.
 
 ## Výstup
 
@@ -93,7 +93,7 @@ Upozornenia (status ostáva): `multiple_ico_on_web`, `ico_invalid_checksum`, `na
   "email": { "predmet": "…", "text": "Dobrý deň, …", "pocet_slov": 96 },
   "chyby": [],
   "zdroje": ["https://www.gesan.sk/", "https://www.gesan.sk/kontakt/", "https://www.gesan.sk/produkty/", "https://api.statistics.sk/rpo/v1/entity/719708"],
-  "tokeny": { "vstup": 3544, "vystup": 728, "volania": 1, "spolu": 4272, "model": "gpt-4o-mini-2024-07-18", "cena_usd": 0.000968 }
+  "tokeny": { "vstup": 8061, "vystup": 1519, "cache": 4480, "volania": 2, "spolu": 9580, "model": "gpt-4o-mini-2024-07-18", "cena_usd": 0.002121 }
 }
 ```
 

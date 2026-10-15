@@ -61,48 +61,48 @@
     "rpo_url": "https://api.statistics.sk/rpo/v1/entity/719708"
   },
   "popis": {
-    "value": "GESAN s.r.o. sa zaoberá profesionálnym laserovým a CNC gravírovaním. Ich služby sú určené pre firmy a jednotlivcov v Bratislave a okolí.",
+    "value": "Firma GESAN s.r.o. sa zaoberá profesionálnym laserovým a CNC gravírovaním. Ich služby sú zamerané na priemyselných zákazníkov v Bratislave.",
     "source": "ai (text webu + RPO)",
     "kvalita_podkladov": "dostatočné",
     "odvetvie": "Gravírovanie a výroba štítkov"
   },
   "zistenia": {
     "value": [
-      "Ponúkajú CNC a laserové gravírovanie.",
+      "Ponúkajú profesionálne laserové a CNC gravírovanie.",
       "Vyrábajú priemyselné a eloxované štítky.",
       "Zákazníci môžu kontaktovať firmu cez e-mail a telefón.",
-      "Na webe majú prehľad produktov a služieb.",
-      "Otváracie hodiny sú uvedené na webe.",
-      "Majú široké spektrum produktov vrátane 3D tlače."
+      "Na webe majú sekciu s produktmi a službami.",
+      "Poskytujú služby pre firmy v oblasti priemyslu.",
+      "Otváracie hodiny sú uvedené na webe."
     ],
     "source": "ai (fakty z textu webu)"
   },
   "prilezitosti": [
     {
       "nazov": "Automatizácia spracovania dopytov",
-      "co_sa_automatizuje": "Keď zákazník vyplní kontaktný formulár, AI automaticky spracuje dopyt a pripraví odpoveď s cenovou ponukou.",
+      "co_sa_automatizuje": "Keď zákazník vyplní kontaktný formulár, AI automaticky spracuje dopyt a pripraví odpoveď s potrebnými informáciami.",
       "uspora_casu": "odhad 2–3 h týždenne pri ~10 dopytoch po ~15 min",
       "narocnost": "nízka",
-      "preco_prave_vy": "Na webe máte formulár na kontaktovanie firmy."
+      "preco_prave_vy": "Na webe majú kontaktný formulár pre zákazníkov."
     },
     {
-      "nazov": "Automatizácia sledovania objednávok",
-      "co_sa_automatizuje": "AI môže sledovať stav objednávok a automaticky informovať zákazníkov o ich priebehu.",
-      "uspora_casu": "odhad 1–2 h týždenne pri ~5 objednávkach po ~15 min",
+      "nazov": "Automatické sledovanie objednávok",
+      "co_sa_automatizuje": "AI môže sledovať stav objednávok a automaticky informovať zákazníkov o zmene stavu ich objednávky.",
+      "uspora_casu": "odhad 1–2 h týždenne pri ~20 objednávkach po ~6 min",
       "narocnost": "stredná",
-      "preco_prave_vy": "Zákazníci môžu kontaktovať firmu cez e-mail a telefón."
+      "preco_prave_vy": "Ponúkajú výrobné štítky a gravírovanie, čo vyžaduje sledovanie objednávok."
     },
     {
-      "nazov": "Automatizácia zasielania newsletterov",
-      "co_sa_automatizuje": "AI môže spravovať zoznam odberateľov a automaticky zasielať aktualizácie o nových produktoch a službách.",
-      "uspora_casu": "odhad 1–2 h mesačne pri ~1 newsletteri po ~30 min",
+      "nazov": "Automatizácia odpovedí na časté otázky",
+      "co_sa_automatizuje": "AI môže spracovávať opakujúce sa otázky a poskytovať rýchle odpovede zákazníkom, čím ušetrí čas zamestnancov.",
+      "uspora_casu": "odhad 1–2 h týždenne pri ~15 otázkach po ~8 min",
       "narocnost": "nízka",
-      "preco_prave_vy": "Na webe máte sekciu aktualít, kde môžete informovať zákazníkov."
+      "preco_prave_vy": "Na webe sú uvedené rôzne služby, ktoré môžu vyžadovať časté otázky od zákazníkov."
     }
   ],
   "email": {
-    "predmet": "Nápady na automatizáciu pre GESAN",
-    "text": "Dobrý deň,\n\nSme slovenská IT firma, ktorá pomáha malým a stredným firmám šetriť čas pomocou AI automatizácií. Radi by sme Vám predstavili niekoľko nápadov, ako by ste mohli zefektívniť Vaše procesy.\n\nNa webe máte formulár na kontaktovanie firmy, čo je skvelý základ pre automatizáciu spracovania dopytov. Môžeme navrhnúť systém, ktorý automaticky spracuje dopyty a pripraví odpovede, čo by mohlo ušetriť 2–3 hodiny týždenne.\n\nAk by Vás to zaujímalo, radi by sme sa s Vami spojili na krátky 15-minútový hovor v čase, ktorý Vám vyhovuje.\n\nĎakujem za Váš čas a teším sa na prípadnú odpoveď.\n\nS pozdravom",
+    "predmet": "Návrhy na automatizáciu procesov",
+    "text": "Dobrý deň,\n\nSme slovenská IT firma, ktorá sa zaoberá AI automatizáciami a radi by sme Vám predstavili niekoľko nápadov na zefektívnenie Vašich procesov. Zaznamenali sme, že ponúkate profesionálne gravírovanie a výrobu štítkov, čo naznačuje potrebu efektívneho spracovania dopytov. Navrhujeme automatizáciu spracovania dopytov, pri ktorej by AI spracovala formuláre od zákazníkov a pripravila odpovede s potrebnými informáciami, čo by mohlo ušetriť 2–3 hodiny týždenne. Ak by Vás to zaujímalo, radi by sme sa s Vami spojili na krátky 15-minútový hovor v čase, ktorý Vám vyhovuje.\n\nĎakujeme za Váš čas a tešíme sa na prípadnú odpoveď.\n\nS pozdravom",
     "pocet_slov": 96,
     "source": "ai"
   },
@@ -114,13 +114,13 @@
     "https://api.statistics.sk/rpo/v1/entity/719708"
   ],
   "tokeny": {
-    "vstup": 3544,
-    "vystup": 728,
-    "cache": 0,
-    "volania": 1,
-    "spolu": 4272,
+    "vstup": 8061,
+    "vystup": 1519,
+    "cache": 4480,
+    "volania": 2,
+    "spolu": 9580,
     "model": "gpt-4o-mini-2024-07-18",
-    "cena_usd": 0.000968
+    "cena_usd": 0.002121
   },
-  "timestamp": "2026-10-15T11:29:31.242Z"
+  "timestamp": "2026-10-15T11:39:50.984Z"
 }

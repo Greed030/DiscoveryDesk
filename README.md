@@ -34,15 +34,15 @@ flowchart LR
 
 | Firma | Status | IČO | Sídlo (z RPO) | Adresa na webe | Cena |
 |---|---|---|---|---|---|
-| **GESAN s. r. o.** · gesan.sk | ✅ ok | 44753152 ✅ web + RPO | Výtvarná 19, 821 06 Bratislava | Dvojkrížna 28, Bratislava | $0.00097 |
-| **Bellesa s.r.o.** · bellesa.sk | ✅ ok | 51241935 ✅ web + RPO | Majer 1007/293, 922 41 Drahovce | Nám. J. Murgaša 1, Piešťany | $0.00272 |
-| **COFFIX s. r. o.** · serviskavovary.sk | ✅ ok | 48261068 ✅ web + RPO | Kvetná 3111/7A, 903 01 Senec | Zadunajská cesta 12, Bratislava | $0.00208 |
+| **GESAN s. r. o.** · gesan.sk | ✅ ok | 44753152 ✅ web + RPO | Výtvarná 19, 821 06 Bratislava | Dvojkrížna 28, Bratislava | $0.00212 |
+| **Bellesa s.r.o.** · bellesa.sk | ✅ ok | 51241935 ✅ web + RPO | Majer 1007/293, 922 41 Drahovce | Nám. J. Murgaša 1, Piešťany | $0.00279 |
+| **COFFIX s. r. o.** · serviskavovary.sk | ✅ ok | 48261068 ✅ web + RPO | Kvetná 3111/7A, 903 01 Senec | Zadunajská cesta 12, Bratislava | $0.00206 |
 
 Ukážka (serviskavovary.sk) – AI najprv vypíše fakty z webu a až na nich stavia nápady:
 
-> **1. Automatizácia spracovania servisných formulárov** · 🟢 nízka · odhad 3–5 h týždenne pri ~10 formulároch po ~20 min
-> Keď zákazník vyplní servisný formulár, AI automaticky spracuje údaje a vytvorí interný tiket pre technika.
-> *Prečo práve Vy:* Na webe je dostupný servisný formulár na objednávku.
+> **1. Automatizácia spracovania servisných formulárov** · 🟢 nízka · odhad 3–4 h týždenne pri ~20 formulároch po ~10 min
+> Keď zákazník vyplní servisný formulár, AI automaticky spracuje údaje a priradí ich technikovi na opravu.
+> *Prečo práve Vy:* Na webe máte servisný formulár na objednávky.
 
 Celé podklady (popis, zistenia, 3 príležitosti, e-mail, zdroje): **[results/README.md](results/README.md)** · tabuľka: [results/vysledky.csv](results/vysledky.csv) · JSON: `results/<domena>.json`.
 
@@ -65,7 +65,7 @@ Testované na n8n **2.13.4** self-hosted. Všetky nastavenia (model, limity, tim
 | OpenAI `gpt-4o-mini` | popis, zistenia, 3 príležitosti, e-mail – 1 volanie so structured output | $0.15 / $0.60 za 1M tokenov |
 | Google Sheets | výstupná tabuľka | — |
 
-**Náklady na 1 firmu** (skutočné tokeny z behu, logujú sa pri každej firme): bez opravy ~4 300 tokenov ≈ **$0.001**, s jedným opravným volaním 9 300 – 13 400 tokenov ≈ $0.002 – $0.003. Priemer na testovacích weboch **$0.0019 (≈ 0,2 centa)**, 1 000 firiem ≈ $1 – 3. Cena je horný odhad – zľava OpenAI za cache tokeny sa nezapočítava. Model sa mení jedným poľom; `gpt-4.1-mini` píše po slovensky lepšie a stále stojí menej ako cent na firmu.
+**Náklady na 1 firmu** (skutočné tokeny z behu, logujú sa pri každej firme): bez opravy ~4 300 tokenov ≈ $0.001, s jedným opravným volaním (napr. štýl e-mailu) 9 300 – 13 600 tokenov ≈ $0.002 – $0.003. Na testovacích weboch priemer **$0.0023 na firmu (≈ 0,2 centa)**, 1 000 firiem ≈ $1 – 3. Cena je horný odhad – zľava OpenAI za cache tokeny sa nezapočítava. Model sa mení jedným poľom; `gpt-4.1-mini` píše po slovensky lepšie a stále stojí menej ako cent na firmu.
 
 ## Ošetrenie chýb
 
@@ -80,7 +80,7 @@ Testované na n8n **2.13.4** self-hosted. Všetky nastavenia (model, limity, tim
 | `ai_error` | chyba OpenAI | fakty z webu a RPO, bez textov |
 | `invalid_domain`, `internal_error` | chybný vstup / neočakávaná chyba | dôvod; workflow pokračuje |
 
-Výstup AI kontroluje kód: platný JSON, popis 2–3 vety, presne 3 príležitosti, náročnosť nízka/stredná/vysoká, e-mail 90–120 slov. Pri probléme ide **jedna** opravná požiadavka; limit 120 slov sa nikdy neprekročí.
+Výstup AI kontroluje kód: platný JSON, popis 2–3 vety, presne 3 príležitosti, náročnosť nízka/stredná/vysoká, e-mail 90–120 slov – a aj štýl, ktorý model občas poruší: hodnotiace frázy („skvelé“, „veľmi zaujímavé“), miešanie „ja / my“ v e-maile a všeobecné zdôvodnenia nápadov („na webe sú kontakty“). Pri probléme ide **jedna** opravná požiadavka; limit 120 slov sa nikdy neprekročí.
 
 ## Testované aj mimo zadania
 
@@ -98,6 +98,27 @@ Mojou podmienkou bolo, aby riešenie fungovalo pre akúkoľvek slovenskú firmu,
 | neexistujúca doména, „toto-nie-je-domena“ | chybný vstup | ⚠️ `web_unreachable`, `invalid_domain` |
 
 Simulované aj výpadky: timeout RPO, chybný OpenAI kľúč, nedostupná tabuľka, web vracajúci chybovú hlášku servera – workflow vždy dobehol so správnym statusom.
+
+## Čo sa menilo počas testovania
+
+Riešenie vznikalo iteratívne – každá úprava vyšla z konkrétneho zistenia na reálnych dátach:
+
+| Zistenie pri testoch | Úprava |
+|---|---|
+| Na serviskavovary.sk vracajú všetky typické cesty (`/kontakt`, `/o-nas`…) 404 – údaje sú na `/stranka/kontakt/` a `/stranka/vop/`; bellesa.sk má IČO len v GDPR | podstránky sa hľadajú v odkazoch z hlavnej stránky, typické cesty sú len doplnok |
+| bellesa.sk vracia pre neexistujúce stránky hlavnú stránku s kódom 200 („soft 404“) | duplicitné stránky sa zahodia |
+| Adresa na webe nie je sídlo (serviskavovary: Bratislava × Senec, bellesa: Piešťany × Drahovce) | sídlo vždy z RPO, adresa z webu zvlášť v stĺpci `adresa_web` |
+| profesia.sk: v RPO je dnes iná, novšia firma „Profesia s. r. o.“, skutočný prevádzkovateľ sa premenoval na Alma Career Slovakia | presná zhoda názvu aj s právnou formou, vrátane bývalých názvov (`name_changed`) |
+| martinus.sk uvádza 24 IČO (partneri, spracovatelia údajov) | overí sa viac kandidátov a vyberie ten, ktorý sedí s názvom webu |
+| alza.sk vracia stránku Cloudflare „Just a moment…“ aj cez Jina | rozpoznanie ochrany proti robotom → `web_unreachable`, AI sa nevolá |
+| serviskavovary.sk mal počas testov výpadok – s kódom 200 vracal len „Connect failed: Connection refused“ | web bez textu → `web_unreachable` s tým, čo server vrátil |
+| reCaptcha na kontaktnej stránke gesan.sk sa mylne vyhodnotila ako ochrana proti robotom | presnejšie pravidlá rozpoznania |
+| Prvé texty AI boli všeobecné – napr. pre bellesa.sk navrhli online rezerváciu, ktorú už má | AI najprv vypíše `zistenia` z webu a nápady na ne musia nadväzovať |
+| E-maily mali 38–50 slov a pôsobili stroho | zdvorilá štruktúra, 90–120 slov, kontrola minimálnej dĺžky |
+| Popis mal niekedy len 1 vetu (zadanie: 2–3) | kód počíta vety a pri chybe žiada opravu |
+| Model napriek promptu písal „skvelé“, miešal „ja / my“ a zdôvodňoval nápady tým, že „na webe sú kontakty“ | kontrola štýlu kódom + jedna oprava |
+| Opakované spustenie pridávalo duplicitné riadky a míňalo tokeny | preskočenie hotových firiem, zápis „append or update“ podľa domény |
+| Plný JSON v tabuľke roztiahol riadok na stovky riadkov | JSON sa zapisuje v jednom riadku |
 
 ## Ako som pracoval s AI
 

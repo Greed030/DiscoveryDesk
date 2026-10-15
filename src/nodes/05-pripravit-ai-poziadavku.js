@@ -71,7 +71,7 @@ STEP 2 – texts based only on zistenia:
   3. One specific, sincere observation about their business taken from zistenia (no flattery like "skvelé").
   4. One concrete idea from prilezitosti: how it would work for them and how much time it could save; optionally mention a second idea in half a sentence.
   5. Courteous, non-binding invitation to a short 15-minute call at a time that suits them (e.g. "ak by Vás to zaujímalo…", "bez akýchkoľvek záväzkov").
-  6. Thanks for their time (e.g. "Ďakujem za Váš čas a teším sa na prípadnú odpoveď.").
+  6. Thanks for their time, in plural (e.g. "Ďakujeme za Váš čas a tešíme sa na prípadnú odpoveď.").
   7. "S pozdravom" and nothing after it.
   Write consistently in the first person plural ("my", "naša firma", "radi by sme") – never switch between "I" and "we". No evaluative compliments ("veľmi zaujímavé", "skvelé", "výnimočné") – a concrete observation is enough.
   Natural, idiomatic Slovak with correct grammar (cases, agreement), no word-for-word translations from English. Formal vykanie with capitalised Vy/Vás/Vám/Váš/Vaša/Vaše. No criticism of their website or processes, no hype, no placeholders such as [Meno], no invented facts about the sender.

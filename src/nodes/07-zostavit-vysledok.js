@@ -12,6 +12,10 @@ const countWords = s => (String(s || '').match(/[\p{L}\p{N}][\p{L}\p{N}'’.\-�
 const ABBR = /(?<![\p{L}])(?:spol\.\s?s\s?r\.\s?o\.|s\.\s?r\.\s?o\.|a\.\s?s\.|k\.\s?s\.|v\.\s?o\.\s?s\.|napr\.|atď\.|tzv\.|resp\.|ul\.|tel\.|č\.|ing\.|mgr\.|mudr\.|bc\.|phdr\.|judr\.|rndr\.|dr\.|t\.\s?j\.|t\.\s?č\.|cca\.|min\.|max\.|hod\.|str\.)/giu;
 const countSentences = s => String(s || '').replace(ABBR, m => m.replace(/\./g, '')).replace(/(\d)\.(\d)/g, '$1,$2')
   .split(/(?<=[.!?…])\s+/).filter(x => /\p{L}/u.test(x)).length;
+const FLATTERY = /(?<![\p{L}])(?:skvel\p{L}*|výborn\p{L}*|výnimočn\p{L}*|úžasn\p{L}*|fantastick\p{L}*|perfektn\p{L}*|vynikajúc\p{L}*|veľmi zaujímav\p{L}*)/giu;
+const SINGULAR = /(?<![\p{L}])(?:ďakujem|teším sa|rád by som|rada by som|zaznamenal som|zaznamenala som|všimol som|všimla som|navrhujem|ponúkam|mám)(?![\p{L}])/giu;
+const GENERIC = /kontaktn\p{L}* (?:údaj|informáci)\p{L}*|(?:môžu|možnosť|možno) (?:ich |firmu )?kontaktovať|komunikáci\p{L}* so zákazníkmi je dôležit|na webe (?:sú|je) (?:uvedené |uvedený )?kontakt/iu;
+const found = (re, s) => [...new Set((String(s || '').match(re) || []).map(x => x.toLowerCase()))].join('“, „');
 function parseAi(resp) {
   if (!resp || !Array.isArray(resp.choices)) return { fatal: true };
   const msg = resp.choices[0]?.message || {};
@@ -28,15 +32,20 @@ function validateAi(ai, maxWords, minWords) {
   opp.slice(0, 3).forEach((o, i) => {
     for (const k of ['nazov', 'co_sa_automatizuje', 'uspora_casu', 'preco_prave_vy']) if (!String(o?.[k] || '').trim()) p.push(`Príležitosť ${i + 1}: chýba "${k}".`);
     if (!['nízka', 'stredná', 'vysoká'].includes(o?.narocnost)) p.push(`Príležitosť ${i + 1}: "narocnost" musí byť nízka, stredná alebo vysoká.`);
+    if (GENERIC.test(o?.preco_prave_vy || '')) p.push(`Štýl: príležitosť ${i + 1} má všeobecné zdôvodnenie („${o.preco_prave_vy}“).`);
   });
   const words = countWords(ai.email);
   if (!words) p.push('Chýba "email".');
   else if (words > maxWords) p.push(`E-mail má ${words} slov, limit je ${maxWords}.`);
   else if (words < minWords) p.push(`E-mail má len ${words} slov, je príliš krátky.`);
+  if (found(FLATTERY, ai.email)) p.push(`Štýl: e-mail obsahuje hodnotiace frázy („${found(FLATTERY, ai.email)}“).`);
+  if (found(SINGULAR, ai.email)) p.push(`Štýl: e-mail mieša jednotné číslo („${found(SINGULAR, ai.email)}“).`);
   return p;
 }
-// váha problémov: krátky e-mail je mäkký problém, všetko ostatné (aj > limit slov) je tvrdé porušenie zadania
-const score = a => validateAi(a, MAX_WORDS, MIN_WORDS).reduce((s, p) => s + (p.includes('príliš krátky') ? 1 : 10), 0);
+// váha problémov pri výbere medzi pôvodnou a opravenou verziou:
+// e-mail nad limit slov (100) > iné porušenie zadania (50) > štýl (5) > krátky e-mail (1)
+const weight = p => (p.includes('limit je') ? 100 : p.startsWith('Štýl:') ? 5 : p.includes('príliš krátky') ? 1 : 50);
+const score = a => validateAi(a, MAX_WORDS, MIN_WORDS).reduce((s, p) => s + weight(p), 0);
 // -------------------------------------------------------------------------
 
 // odkiaľ položka prišla: z opravy (odpoveď OpenAI) alebo priamo (naše dáta s poľom `domena`)
@@ -66,7 +75,9 @@ if (ai) {
   const problems = validateAi(ai, MAX_WORDS, MIN_WORDS);
   if (problems.some(p => p.startsWith('E-mail') && p.includes('limit'))) item.chyby.push({ kod: 'email_too_long', detail: `${countWords(ai.email)} slov` });
   if (problems.some(p => p.includes('príliš krátky'))) item.chyby.push({ kod: 'email_too_short', detail: `${countWords(ai.email)} slov` });
-  const other = problems.filter(p => !p.startsWith('E-mail'));
+  const style = problems.filter(p => p.startsWith('Štýl:'));
+  if (style.length) item.chyby.push({ kod: 'ai_style', detail: style.map(p => p.replace('Štýl: ', '')).join(' ') });
+  const other = problems.filter(p => !p.startsWith('E-mail') && !p.startsWith('Štýl:'));
   if (other.length) item.chyby.push({ kod: 'ai_output_invalid', detail: other.join(' ') });
 } else if (!item.preskocit_ai && !item.chyby.some(c => c.kod === 'ai_error')) {
   item.chyby.push({ kod: 'ai_error', detail: 'AI nevrátila použiteľný výstup ani po oprave.' });
@@ -94,6 +105,7 @@ const MSG = {
   email_too_long: ['upozornenie', `E-mail je aj po oprave dlhší ako ${MAX_WORDS} slov.`],
   email_too_short: ['info', `E-mail je kratší ako ${MIN_WORDS} slov (limit ${MAX_WORDS} je dodržaný).`],
   ai_output_invalid: ['upozornenie', 'Výstup AI nespĺňa všetky kontroly.'],
+  ai_style: ['info', 'Text AI má štylistický nedostatok – pred odoslaním skontrolujte (pozri detail).'],
   jina_fallback: ['info', 'Web načítaný cez r.jina.ai (JavaScriptový web alebo blokovanie robotov).'],
 };
 const chyby = item.chyby.map(c => ({ kod: c.kod, zavaznost: MSG[c.kod]?.[0] || 'upozornenie', sprava: MSG[c.kod]?.[1] || c.kod, ...(c.detail ? { detail: c.detail } : {}) }));

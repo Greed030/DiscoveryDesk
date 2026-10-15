@@ -60,49 +60,49 @@
     "rpo_url": "https://api.statistics.sk/rpo/v1/entity/258444"
   },
   "popis": {
-    "value": "Firma sa zaoberá servisom a opravou kávovarov, predajom repasovaných kávovarov a príslušenstva. Poskytujú služby pre domácnosti a firmy v oblasti údržby a opravy kávovarov.",
+    "value": "Firma COFFIX s.r.o. sa zaoberá servisom a predajom kávovarov a kávy. Poskytujú služby pre domácnosti a firmy v Bratislave a okolí.",
     "source": "ai (text webu + RPO)",
     "kvalita_podkladov": "dostatočné",
     "odvetvie": "Servis kávovarov"
   },
   "zistenia": {
     "value": [
-      "Zabezpečujú servis a opravy kávovarov.",
-      "Ponúkajú repasované kávovary a príslušenstvo.",
-      "Zákazníci môžu kontaktovať firmu telefonicky alebo e-mailom.",
-      "Na webe je dostupný servisný formulár na objednávku.",
-      "Opravy realizujú väčšinou do 1 týždňa.",
-      "Možnosť objednať kuriéra na vyzdvihnutie kávovaru."
+      "Servis kávovarov s dôrazom na diagnostiku a opravy.",
+      "Možnosť objednania kuriéra na vyzdvihnutie kávovaru.",
+      "Servisný formulár na webe pre objednávky.",
+      "Predaj kávovarov a príslušenstva online.",
+      "Možnosť registrácie na odber newslettera.",
+      "Opravy kávovarov väčšinou do 1 týždňa."
     ],
     "source": "ai (fakty z textu webu)"
   },
   "prilezitosti": [
     {
       "nazov": "Automatizácia spracovania servisných formulárov",
-      "co_sa_automatizuje": "Keď zákazník vyplní servisný formulár, AI automaticky spracuje údaje a vytvorí interný tiket pre technika.",
-      "uspora_casu": "odhad 3–5 h týždenne pri ~10 formulároch po ~20 min",
+      "co_sa_automatizuje": "Keď zákazník vyplní servisný formulár, AI automaticky spracuje údaje a priradí ich technikovi na opravu.",
+      "uspora_casu": "odhad 3–4 h týždenne pri ~20 formulároch po ~10 min",
       "narocnost": "nízka",
-      "preco_prave_vy": "Na webe je dostupný servisný formulár na objednávku."
+      "preco_prave_vy": "Na webe máte servisný formulár na objednávky."
     },
     {
-      "nazov": "Automatické pripomienky na údržbu",
-      "co_sa_automatizuje": "AI môže sledovať termíny údržby a automaticky posielať pripomienky zákazníkom.",
-      "uspora_casu": "odhad 1–2 h týždenne pri ~20 zákazníkoch po ~5 min",
+      "nazov": "Automatické pripomienky po oprave",
+      "co_sa_automatizuje": "Po dokončení opravy AI automaticky pošle zákazníkovi e-mail s pripomienkou na prevzatie kávovaru.",
+      "uspora_casu": "odhad 1–2 h týždenne pri ~10 opravách po ~10 min",
       "narocnost": "nízka",
-      "preco_prave_vy": "Zákazníci potrebujú pravidelnú údržbu kávovarov."
+      "preco_prave_vy": "Opravy realizujete väčšinou do 1 týždňa."
     },
     {
-      "nazov": "Zefektívnenie komunikácie so zákazníkmi",
-      "co_sa_automatizuje": "AI môže spracovávať bežné otázky zákazníkov a poskytovať odpovede na základe FAQ.",
-      "uspora_casu": "odhad 2–4 h týždenne pri ~15 dopytoch po ~10 min",
+      "nazov": "Optimalizácia objednávok kuriéra",
+      "co_sa_automatizuje": "AI analyzuje dopyty a automaticky objedná kuriéra na vyzdvihnutie kávovarov, čím zjednoduší proces pre zákazníkov.",
+      "uspora_casu": "odhad 2–3 h týždenne pri ~15 objednávkach po ~10 min",
       "narocnost": "stredná",
-      "preco_prave_vy": "Na webe sú kontaktné údaje a možnosť kontaktovať firmu."
+      "preco_prave_vy": "Možnosť objednania kuriéra na vyzdvihnutie kávovaru."
     }
   ],
   "email": {
     "predmet": "Nápady na automatizáciu pre Vás",
-    "text": "Dobrý deň,\n\nSme slovenská IT firma, ktorá sa špecializuje na AI automatizácie pre malé a stredné podniky. Radi by sme Vám predstavili niekoľko nápadov na zefektívnenie Vašich procesov, ktoré by mohli výrazne uľahčiť Vašu prácu.\n\nNa webe máte servisný formulár, ktorý by mohol byť automatizovaný. Keď zákazník vyplní formulár, AI spracuje údaje a vytvorí tiket pre technika, čo by Vám ušetrilo 3–5 hodín týždenne. Taktiež môžeme navrhnúť automatické pripomienky na údržbu pre Vašich zákazníkov, čím ušetríte ďalšie 1–2 hodiny týždenne.\n\nAk by Vás to zaujímalo, radi by sme sa s Vami spojili na krátky 15-minútový hovor. Ďakujem za Váš čas a teším sa na prípadnú odpoveď.\n\nS pozdravom",
-    "pocet_slov": 108,
+    "text": "Dobrý deň,\n\nSme slovenská IT firma, ktorá pomáha malým a stredným firmám šetriť čas pomocou AI automatizácií. Zaznamenali sme, že poskytujete komplexný servis kávovarov vrátane diagnostiky a opráv, čo je pre zákazníkov veľmi dôležité.\n\nNavrhujeme automatizáciu spracovania servisných formulárov, čo by znamenalo, že po vyplnení formulára by AI okamžite spracovala údaje a priradila ich technikovi na opravu. Týmto by ste mohli ušetriť 3–4 hodiny týždenne. Taktiež by sme mohli zautomatizovať pripomienky po oprave kávovarov, čím by ste zjednodušili komunikáciu so zákazníkmi.\n\nAk by Vás to zaujímalo, radi by sme sa s Vami dohodli na krátkom 15-minútovom hovore. Ďakujeme za Váš čas a tešíme sa na prípadnú odpoveď.\n\nS pozdravom",
+    "pocet_slov": 109,
     "source": "ai"
   },
   "chyby": [],
@@ -115,13 +115,13 @@
     "https://api.statistics.sk/rpo/v1/entity/258444"
   ],
   "tokeny": {
-    "vstup": 7808,
-    "vystup": 1511,
-    "cache": 6016,
+    "vstup": 7798,
+    "vystup": 1491,
+    "cache": 5376,
     "volania": 2,
-    "spolu": 9319,
+    "spolu": 9289,
     "model": "gpt-4o-mini-2024-07-18",
-    "cena_usd": 0.002078
+    "cena_usd": 0.002064
   },
-  "timestamp": "2026-10-15T11:30:11.524Z"
+  "timestamp": "2026-10-15T11:40:41.826Z"
 }

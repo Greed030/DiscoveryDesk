@@ -59,49 +59,49 @@
     "rpo_url": "https://api.statistics.sk/rpo/v1/entity/9402056"
   },
   "popis": {
-    "value": "Bellesa s.r.o. je moderné dermato-estetické a laserové centrum v Piešťanoch. Poskytujú široké spektrum estetických a laserových ošetrení na najvyššej medicínskej úrovni.",
+    "value": "Bellesa je dermato-estetické a laserové centrum v Piešťanoch, ktoré poskytuje široké spektrum ošetrení. Zameriavajú sa na bezpečné a profesionálne estetické procedúry s individuálnym prístupom ku každému klientovi.",
     "source": "ai (text webu + RPO)",
     "kvalita_podkladov": "dostatočné",
     "odvetvie": "Estetická medicína"
   },
   "zistenia": {
     "value": [
-      "Bellesa s.r.o. je dermato-estetické a laserové centrum v Piešťanoch.",
-      "Ponúkajú široké spektrum laserových a estetických ošetrení.",
-      "Na webe majú online rezerváciu termínov a cenník služieb.",
-      "Klienti môžu objednávať cez e-mail, telefonicky alebo cez sociálne siete.",
-      "Na stránke sú zverejnené recenzie od spokojných zákazníkov.",
-      "Služby sú vedené certifikovanými odborníkmi s dlhoročnými skúsenosťami."
+      "Bellesa ponúka estetické a laserové ošetrenia v Piešťanoch.",
+      "Na webe majú online rezerváciu termínov pre ošetrenia.",
+      "Poskytujú služby ako botulotoxín, mezoterapia a laserová epilácia.",
+      "Na stránke je cenník služieb vrátane DPH a podmienok platby.",
+      "Zákazníci môžu kontaktovať firmu cez e-mail alebo telefón.",
+      "Majú recenzie od klientov s pozitívnymi skúsenosťami."
     ],
     "source": "ai (fakty z textu webu)"
   },
   "prilezitosti": [
     {
       "nazov": "Automatizácia potvrdení rezervácií",
-      "co_sa_automatizuje": "Keď klient rezervuje termín online, AI automaticky potvrdí rezerváciu a zašle podrobnosti o ošetrení.",
+      "co_sa_automatizuje": "Keď si zákazník rezervuje termín, AI automaticky pošle potvrdenie a pripomienku ošetrenia. To zníži počet zmeškaných termínov.",
       "uspora_casu": "odhad 1–2 h týždenne pri ~10 rezerváciách po ~10 min",
       "narocnost": "nízka",
-      "preco_prave_vy": "Na webe majú online rezerváciu termínov."
+      "preco_prave_vy": "Na webe majú online rezerváciu termínov pre ošetrenia."
     },
     {
       "nazov": "Automatizácia správy recenzií",
-      "co_sa_automatizuje": "AI monitoruje recenzie a automaticky odpovedá na pozitívne a negatívne recenzie, čím zlepšuje komunikáciu so zákazníkmi.",
-      "uspora_casu": "odhad 2–3 h týždenne pri ~20 recenziách po ~6 min",
+      "co_sa_automatizuje": "AI môže sledovať a analyzovať recenzie od zákazníkov, generovať odpovede a posielať štatistiky tímu. Pomôže to zlepšiť služby a komunikáciu.",
+      "uspora_casu": "odhad 2–3 h týždenne pri ~15 recenziách po ~10 min",
       "narocnost": "stredná",
-      "preco_prave_vy": "Na stránke sú zverejnené recenzie od spokojných zákazníkov."
+      "preco_prave_vy": "Majú recenzie od klientov s pozitívnymi skúsenosťami."
     },
     {
-      "nazov": "Automatizácia sledovania dopytov",
-      "co_sa_automatizuje": "Keď klient pošle dopyt cez formulár, AI automaticky triedi dopyty a priraďuje ich správnemu odborníkovi.",
-      "uspora_casu": "odhad 2–4 h týždenne pri ~15 dopytoch po ~10 min",
+      "nazov": "Automatizácia správy dopytov",
+      "co_sa_automatizuje": "Keď zákazník pošle dopyt cez formulár na stránke, AI automaticky spracuje otázku a predloží odpoveď, ktorú zamestnanec schváli. Zrýchli to reakčný čas na dopyty.",
+      "uspora_casu": "odhad 1–2 h týždenne pri ~10 dopytoch po ~10 min",
       "narocnost": "nízka",
-      "preco_prave_vy": "Klienti môžu objednávať cez e-mail, telefonicky alebo cez sociálne siete."
+      "preco_prave_vy": "Na webe je formulár pre zákazníkov, aby mohli poslať dopyt."
     }
   ],
   "email": {
-    "predmet": "Automatizácie pre Vašu kliniku",
-    "text": "Dobrý deň,\n\nSme slovenská IT firma, ktorá pomáha malým a stredným firmám šetriť čas pomocou AI automatizácií. Zaznamenali sme, že ponúkate široké spektrum estetických a laserových ošetrení, čo je veľmi zaujímavé.\n\nRadi by sme navrhli automatizáciu potvrdení rezervácií, ktorá by fungovala tak, že po online rezervácii by AI automaticky potvrdila termín a zaslala klientovi všetky potrebné informácie. Týmto by sa mohlo ušetriť 1-2 hodiny týždenne. Okrem toho by sme mohli zvážiť aj automatizáciu správy recenzií, čo by zefektívnilo Vašu komunikáciu so zákazníkmi.\n\nAk by Vás to zaujímalo, radi by sme sa s Vami spojili na krátky 15-minútový hovor v čase, ktorý Vám vyhovuje. Ďakujem za Váš čas a teším sa na prípadnú odpoveď.\n\nS pozdravom",
-    "pocet_slov": 115,
+    "predmet": "Návrhy na automatizáciu pre Bellesa",
+    "text": "Dobrý deň,\n\nSme slovenská IT firma, ktorá sa zaoberá AI automatizáciami pre malé a stredné podniky. Radi by sme Vás oslovili ohľadom možností, ako zefektívniť Vaše procesy a ušetriť Váš čas.\n\nNa Vašej stránke sme si všimli, že ponúkate široké spektrum estetických a laserových ošetrení a umožňujete online rezervácie. Automatizácia potvrdení rezervácií by mohla výrazne znížiť počet zmeškaných termínov, keďže AI automaticky pošle potvrdenie a pripomienku ošetrenia. Odhadujeme, že by to mohlo ušetriť 1 až 2 hodiny týždenne.\n\nAk by Vás to zaujímalo, radi by sme sa s Vami dohodli na krátkom 15-minútovom hovore. \n\nĎakujeme za Váš čas a tešíme sa na prípadnú odpoveď.\n\nS pozdravom",
+    "pocet_slov": 106,
     "source": "ai"
   },
   "chyby": [],
@@ -114,13 +114,13 @@
     "https://api.statistics.sk/rpo/v1/entity/9402056"
   ],
   "tokeny": {
-    "vstup": 11816,
-    "vystup": 1585,
-    "cache": 8064,
+    "vstup": 11938,
+    "vystup": 1662,
+    "cache": 7424,
     "volania": 2,
-    "spolu": 13401,
+    "spolu": 13600,
     "model": "gpt-4o-mini-2024-07-18",
-    "cena_usd": 0.002723
+    "cena_usd": 0.002788
   },
-  "timestamp": "2026-10-15T11:29:53.116Z"
+  "timestamp": "2026-10-15T11:40:19.964Z"
 }
