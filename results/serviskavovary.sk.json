@@ -60,49 +60,49 @@
     "rpo_url": "https://api.statistics.sk/rpo/v1/entity/258444"
   },
   "popis": {
-    "value": "Firma poskytuje servis a opravy kávovarov, ako aj predaj kávy a príslušenstva. Zameriava sa na profesionálnych a automatických kávovarov.",
+    "value": "Firma sa zaoberá servisom a opravou kávovarov, predajom repasovaných kávovarov a príslušenstva. Poskytujú služby pre domácnosti a firmy v oblasti údržby a opravy kávovarov.",
     "source": "ai (text webu + RPO)",
     "kvalita_podkladov": "dostatočné",
-    "odvetvie": "Servis a predaj kávovarov"
+    "odvetvie": "Servis kávovarov"
   },
   "zistenia": {
     "value": [
-      "Servis kávovarov s dôrazom na diagnostiku a opravy.",
-      "Možnosť doručenia kávovaru osobne alebo cez kuriéra.",
-      "Servisný formulár na objednanie opravy kávovaru online.",
-      "Opravy väčšinou do 1 týždňa, ak nie sú potrebné špecifické diely.",
-      "Možnosť objednať základnú a rozšírenú údržbu kávovarov.",
-      "Newsletter na odoberanie noviniek a akcií. "
+      "Zabezpečujú servis a opravy kávovarov.",
+      "Ponúkajú repasované kávovary a príslušenstvo.",
+      "Zákazníci môžu kontaktovať firmu telefonicky alebo e-mailom.",
+      "Na webe je dostupný servisný formulár na objednávku.",
+      "Opravy realizujú väčšinou do 1 týždňa.",
+      "Možnosť objednať kuriéra na vyzdvihnutie kávovaru."
     ],
     "source": "ai (fakty z textu webu)"
   },
   "prilezitosti": [
     {
-      "nazov": "Automatizácia správy servisných dopytov",
-      "co_sa_automatizuje": "Keď zákazník vyplní servisný formulár, AI automaticky spracuje údaje a priradí ich k technikovi na opravu.",
-      "uspora_casu": "odhad 3–5 h týždenne pri ~20 dopytoch po ~15 min",
+      "nazov": "Automatizácia spracovania servisných formulárov",
+      "co_sa_automatizuje": "Keď zákazník vyplní servisný formulár, AI automaticky spracuje údaje a vytvorí interný tiket pre technika.",
+      "uspora_casu": "odhad 3–5 h týždenne pri ~10 formulároch po ~20 min",
       "narocnost": "nízka",
-      "preco_prave_vy": "Na webe máte servisný formulár na objednanie opravy."
+      "preco_prave_vy": "Na webe je dostupný servisný formulár na objednávku."
     },
     {
       "nazov": "Automatické pripomienky na údržbu",
-      "co_sa_automatizuje": "AI generuje a odosiela pripomienky zákazníkom na plánovanú údržbu kávovarov na základe ich predchádzajúcich služieb.",
-      "uspora_casu": "odhad 1–2 h týždenne pri ~10 zákazníkoch po ~10 min",
+      "co_sa_automatizuje": "AI môže sledovať termíny údržby a automaticky posielať pripomienky zákazníkom.",
+      "uspora_casu": "odhad 1–2 h týždenne pri ~20 zákazníkoch po ~5 min",
       "narocnost": "nízka",
-      "preco_prave_vy": "Ponúkate základnú a rozšírenú údržbu kávovarov."
+      "preco_prave_vy": "Zákazníci potrebujú pravidelnú údržbu kávovarov."
     },
     {
-      "nazov": "Analýza spätnej väzby od zákazníkov",
-      "co_sa_automatizuje": "AI zhromažďuje a analyzuje recenzie a spätnú väzbu od zákazníkov, aby identifikovala oblasti na zlepšenie služieb.",
-      "uspora_casu": "odhad 2–4 h týždenne pri ~5 recenziách po ~30 min",
+      "nazov": "Zefektívnenie komunikácie so zákazníkmi",
+      "co_sa_automatizuje": "AI môže spracovávať bežné otázky zákazníkov a poskytovať odpovede na základe FAQ.",
+      "uspora_casu": "odhad 2–4 h týždenne pri ~15 dopytoch po ~10 min",
       "narocnost": "stredná",
-      "preco_prave_vy": "Na webe je možnosť registrácie na newsletter a získavanie noviniek."
+      "preco_prave_vy": "Na webe sú kontaktné údaje a možnosť kontaktovať firmu."
     }
   ],
   "email": {
-    "predmet": "Nápady na automatizáciu pre Vašu firmu",
-    "text": "Dobrý deň,\n\nSme slovenská IT firma, ktorá sa zaoberá AI automatizáciami pre malé a stredné podniky. Rád by som Vám predstavil niekoľko nápadov, ako by ste mohli zefektívniť Vaše služby.\n\nZaznamenal som, že máte online servisný formulár na objednanie opravy kávovarov. Môžeme automatizovať spracovanie týchto dopytov, čo by Vám ušetrilo 3-5 hodín týždenne. Zároveň by sme mohli nastaviť automatické pripomienky na údržbu kávovarov.\n\nAk by Vás to zaujímalo, rád by som sa s Vami spojil na krátky 15-minútový hovor, kedykoľvek to bude pre Vás vhodné.\n\nĎakujem za Váš čas a teším sa na prípadnú odpoveď.\n\nS pozdravom",
-    "pocet_slov": 97,
+    "predmet": "Nápady na automatizáciu pre Vás",
+    "text": "Dobrý deň,\n\nSme slovenská IT firma, ktorá sa špecializuje na AI automatizácie pre malé a stredné podniky. Radi by sme Vám predstavili niekoľko nápadov na zefektívnenie Vašich procesov, ktoré by mohli výrazne uľahčiť Vašu prácu.\n\nNa webe máte servisný formulár, ktorý by mohol byť automatizovaný. Keď zákazník vyplní formulár, AI spracuje údaje a vytvorí tiket pre technika, čo by Vám ušetrilo 3–5 hodín týždenne. Taktiež môžeme navrhnúť automatické pripomienky na údržbu pre Vašich zákazníkov, čím ušetríte ďalšie 1–2 hodiny týždenne.\n\nAk by Vás to zaujímalo, radi by sme sa s Vami spojili na krátky 15-minútový hovor. Ďakujem za Váš čas a teším sa na prípadnú odpoveď.\n\nS pozdravom",
+    "pocet_slov": 108,
     "source": "ai"
   },
   "chyby": [],
@@ -115,13 +115,13 @@
     "https://api.statistics.sk/rpo/v1/entity/258444"
   ],
   "tokeny": {
-    "vstup": 3382,
-    "vystup": 792,
-    "cache": 1024,
-    "volania": 1,
-    "spolu": 4174,
+    "vstup": 7808,
+    "vystup": 1511,
+    "cache": 6016,
+    "volania": 2,
+    "spolu": 9319,
     "model": "gpt-4o-mini-2024-07-18",
-    "cena_usd": 0.000983
+    "cena_usd": 0.002078
   },
-  "timestamp": "2026-10-15T11:06:02.579Z"
+  "timestamp": "2026-10-15T11:30:11.524Z"
 }

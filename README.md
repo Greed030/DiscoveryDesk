@@ -34,15 +34,15 @@ flowchart LR
 
 | Firma | Status | IČO | Sídlo (z RPO) | Adresa na webe | Cena |
 |---|---|---|---|---|---|
-| **GESAN s. r. o.** · gesan.sk | ✅ ok | 44753152 ✅ web + RPO | Výtvarná 19, 821 06 Bratislava | Dvojkrížna 28, Bratislava | $0.00098 |
-| **Bellesa s.r.o.** · bellesa.sk | ✅ ok | 51241935 ✅ web + RPO | Majer 1007/293, 922 41 Drahovce | Nám. J. Murgaša 1, Piešťany | $0.00126 |
-| **COFFIX s. r. o.** · serviskavovary.sk | ✅ ok | 48261068 ✅ web + RPO | Kvetná 3111/7A, 903 01 Senec | Zadunajská cesta 12, Bratislava | $0.00098 |
+| **GESAN s. r. o.** · gesan.sk | ✅ ok | 44753152 ✅ web + RPO | Výtvarná 19, 821 06 Bratislava | Dvojkrížna 28, Bratislava | $0.00097 |
+| **Bellesa s.r.o.** · bellesa.sk | ✅ ok | 51241935 ✅ web + RPO | Majer 1007/293, 922 41 Drahovce | Nám. J. Murgaša 1, Piešťany | $0.00272 |
+| **COFFIX s. r. o.** · serviskavovary.sk | ✅ ok | 48261068 ✅ web + RPO | Kvetná 3111/7A, 903 01 Senec | Zadunajská cesta 12, Bratislava | $0.00208 |
 
 Ukážka (serviskavovary.sk) – AI najprv vypíše fakty z webu a až na nich stavia nápady:
 
-> **1. Automatizácia správy servisných dopytov** · 🟢 nízka · odhad 3–5 h týždenne pri ~20 dopytoch po ~15 min
-> Keď zákazník vyplní servisný formulár, AI automaticky spracuje údaje a priradí ich k technikovi na opravu.
-> *Prečo práve Vy:* Na webe máte servisný formulár na objednanie opravy.
+> **1. Automatizácia spracovania servisných formulárov** · 🟢 nízka · odhad 3–5 h týždenne pri ~10 formulároch po ~20 min
+> Keď zákazník vyplní servisný formulár, AI automaticky spracuje údaje a vytvorí interný tiket pre technika.
+> *Prečo práve Vy:* Na webe je dostupný servisný formulár na objednávku.
 
 Celé podklady (popis, zistenia, 3 príležitosti, e-mail, zdroje): **[results/README.md](results/README.md)** · tabuľka: [results/vysledky.csv](results/vysledky.csv) · JSON: `results/<domena>.json`.
 
@@ -65,7 +65,7 @@ Testované na n8n **2.13.4** self-hosted. Všetky nastavenia (model, limity, tim
 | OpenAI `gpt-4o-mini` | popis, zistenia, 3 príležitosti, e-mail – 1 volanie so structured output | $0.15 / $0.60 za 1M tokenov |
 | Google Sheets | výstupná tabuľka | — |
 
-**Náklady na 1 firmu** (skutočné tokeny z behu, logujú sa pri každej firme): 4 200 – 6 100 tokenov ≈ **$0.001** (≈ 0,1 centa). 1 000 firiem ≈ $1. Pri opravnom volaní najviac ~2×. Model sa mení jedným poľom; `gpt-4.1-mini` píše po slovensky lepšie a stále stojí menej ako cent na firmu.
+**Náklady na 1 firmu** (skutočné tokeny z behu, logujú sa pri každej firme): bez opravy ~4 300 tokenov ≈ **$0.001**, s jedným opravným volaním 9 300 – 13 400 tokenov ≈ $0.002 – $0.003. Priemer na testovacích weboch **$0.0019 (≈ 0,2 centa)**, 1 000 firiem ≈ $1 – 3. Cena je horný odhad – zľava OpenAI za cache tokeny sa nezapočítava. Model sa mení jedným poľom; `gpt-4.1-mini` píše po slovensky lepšie a stále stojí menej ako cent na firmu.
 
 ## Ošetrenie chýb
 

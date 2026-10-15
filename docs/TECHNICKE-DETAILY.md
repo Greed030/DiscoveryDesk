@@ -93,7 +93,7 @@ Upozornenia (status ostáva): `multiple_ico_on_web`, `ico_invalid_checksum`, `na
   "email": { "predmet": "…", "text": "Dobrý deň, …", "pocet_slov": 96 },
   "chyby": [],
   "zdroje": ["https://www.gesan.sk/", "https://www.gesan.sk/kontakt/", "https://www.gesan.sk/produkty/", "https://api.statistics.sk/rpo/v1/entity/719708"],
-  "tokeny": { "vstup": 3462, "vystup": 766, "volania": 1, "spolu": 4228, "model": "gpt-4o-mini-2024-07-18", "cena_usd": 0.000979 }
+  "tokeny": { "vstup": 3544, "vystup": 728, "volania": 1, "spolu": 4272, "model": "gpt-4o-mini-2024-07-18", "cena_usd": 0.000968 }
 }
 ```
 

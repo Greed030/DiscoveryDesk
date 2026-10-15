@@ -1,16 +1,16 @@
 # Výsledky pre testovacie weby
 
-Beh n8n **#73** · 15. 10. 2026, 13:04 · model `gpt-4o-mini-2024-07-18` · Google Sheets: zapísané
+Beh n8n **#74** · 15. 10. 2026, 13:29 · model `gpt-4o-mini-2024-07-18` · Google Sheets: zapísané
 
 Rovnaké dáta: [`vysledky.csv`](vysledky.csv) (= riadky Google Sheet) a plný JSON pre každú firmu (`<domena>.json`).
 
 | Doména | Firma | Status | IČO | Sídlo (RPO) | Cena |
 |---|---|---|---|---|---|
-| gesan.sk | GESAN s. r. o. | ✅ ok | 44753152 ✅ | Výtvarná 19, 821 06 Bratislava | $0.00098 |
-| bellesa.sk | Bellesa s.r.o. | ✅ ok | 51241935 ✅ | Majer 1007/293, 922 41 Drahovce | $0.00126 |
-| serviskavovary.sk | COFFIX s. r. o. | ✅ ok | 48261068 ✅ | Kvetná 3111/7A, 903 01 Senec | $0.00098 |
+| gesan.sk | GESAN s. r. o. | ✅ ok | 44753152 ✅ | Výtvarná 19, 821 06 Bratislava | $0.00097 |
+| bellesa.sk | Bellesa s.r.o. | ✅ ok | 51241935 ✅ | Majer 1007/293, 922 41 Drahovce | $0.00272 |
+| serviskavovary.sk | COFFIX s. r. o. | ✅ ok | 48261068 ✅ | Kvetná 3111/7A, 903 01 Senec | $0.00208 |
 
-**Spolu:** 3 firmy · 14 526 tokenov · $0.00322 → priemer **$0.00107 na firmu**.
+**Spolu:** 3 firmy · 26 992 tokenov · $0.00577 → priemer **$0.00192 na firmu**.
 
 ---
 
@@ -24,34 +24,34 @@ Rovnaké dáta: [`vysledky.csv`](vysledky.csv) (= riadky Google Sheet) a plný J
 | **Právna forma** | Spoločnosť s ručením obmedzeným |
 | **Štatutári** | Ing. Tibor Šallay (konateľ), Igor Šallay (konateľ) |
 | **Kontakt na webe** | gesan@gesan.sk, +421245243139, +421905448364 |
-| **Odvetvie** | Gravírovanie a kovovýroba |
+| **Odvetvie** | Gravírovanie a výroba štítkov |
 
 ### Čo firma robí
 
-GESAN s.r.o. sa zaoberá profesionálnym laserovým a CNC gravírovaním. Ich zákazníkmi sú firmy, ktoré potrebujú štítky a gravírovanie na mieru.
+GESAN s.r.o. sa zaoberá profesionálnym laserovým a CNC gravírovaním. Ich služby sú určené pre firmy a jednotlivcov v Bratislave a okolí.
 
 ### Zistenia z webu
 
-- Firma ponúka profesionálne laserové a CNC gravírovanie.
-- Zákazníci môžu objednávať cez e-mail a telefonicky.
-- Na webe majú uvedené kontaktné údaje a otváracie hodiny.
-- Ponúkajú široké spektrum produktov ako štítky a gravírovanie reklamných predmetov.
-- Vyrábajú priemyselné a eloxované štítky na mieru.
-- Poskytujú služby pre firmy v oblasti gravírovania a kovovýroby.
+- Ponúkajú CNC a laserové gravírovanie.
+- Vyrábajú priemyselné a eloxované štítky.
+- Zákazníci môžu kontaktovať firmu cez e-mail a telefón.
+- Na webe majú prehľad produktov a služieb.
+- Otváracie hodiny sú uvedené na webe.
+- Majú široké spektrum produktov vrátane 3D tlače.
 
 ### 3 príležitosti na AI automatizáciu
 
-**1. Automatizácia spracovania objednávok** · 🟢 nízka · odhad 3–5 h týždenne pri ~10 dopytoch po ~20 min
-Keď zákazník pošle dopyt e-mailom, AI automaticky spracuje objednávku a pripraví odpoveď s cenou a termínom dodania.
-<br>_Prečo práve Vy:_ Zákazníci môžu objednávať cez e-mail.
+**1. Automatizácia spracovania dopytov** · 🟢 nízka · odhad 2–3 h týždenne pri ~10 dopytoch po ~15 min
+Keď zákazník vyplní kontaktný formulár, AI automaticky spracuje dopyt a pripraví odpoveď s cenovou ponukou.
+<br>_Prečo práve Vy:_ Na webe máte formulár na kontaktovanie firmy.
 
-**2. Automatizácia cenových ponúk** · 🟡 stredná · odhad 2–4 h týždenne pri ~5 dopytoch po ~30 min
-AI analyzuje dopyty a automaticky generuje cenové ponuky na základe preddefinovaných parametrov.
-<br>_Prečo práve Vy:_ Ponúkajú široké spektrum produktov ako štítky a gravírovanie.
+**2. Automatizácia sledovania objednávok** · 🟡 stredná · odhad 1–2 h týždenne pri ~5 objednávkach po ~15 min
+AI môže sledovať stav objednávok a automaticky informovať zákazníkov o ich priebehu.
+<br>_Prečo práve Vy:_ Zákazníci môžu kontaktovať firmu cez e-mail a telefón.
 
-**3. Automatizácia sledovania objednávok** · 🟢 nízka · odhad 1–2 h týždenne pri ~10 objednávkach po ~10 min
-AI sleduje stav objednávok a automaticky informuje zákazníkov o priebehu ich realizácie.
-<br>_Prečo práve Vy:_ Zákazníci môžu objednávať cez e-mail a telefonicky.
+**3. Automatizácia zasielania newsletterov** · 🟢 nízka · odhad 1–2 h mesačne pri ~1 newsletteri po ~30 min
+AI môže spravovať zoznam odberateľov a automaticky zasielať aktualizácie o nových produktoch a službách.
+<br>_Prečo práve Vy:_ Na webe máte sekciu aktualít, kde môžete informovať zákazníkov.
 
 ### Návrh e-mailu (96 slov)
 
@@ -59,11 +59,11 @@ AI sleduje stav objednávok a automaticky informuje zákazníkov o priebehu ich 
 
 > Dobrý deň,
 > 
-> Sme slovenská IT firma, ktorá sa špecializuje na AI automatizácie pre malé a stredné podniky. Zaznamenali sme, že ponúkate profesionálne laserové a CNC gravírovanie, čo je veľmi zaujímavé.
+> Sme slovenská IT firma, ktorá pomáha malým a stredným firmám šetriť čas pomocou AI automatizácií. Radi by sme Vám predstavili niekoľko nápadov, ako by ste mohli zefektívniť Vaše procesy.
 > 
-> Mám konkrétny nápad na automatizáciu spracovania objednávok, kde by AI mohla spracovať e-mailové dopyty a pripraviť odpovede s cenami. Odhadujeme, že by to mohlo ušetriť 3–5 hodín týždenne. Rád by som sa s Vami porozprával aj o ďalších možnostiach.
+> Na webe máte formulár na kontaktovanie firmy, čo je skvelý základ pre automatizáciu spracovania dopytov. Môžeme navrhnúť systém, ktorý automaticky spracuje dopyty a pripraví odpovede, čo by mohlo ušetriť 2–3 hodiny týždenne.
 > 
-> Ak by Vás to zaujímalo, rád by som si s Vami dohodol krátky 15-minútový hovor. 
+> Ak by Vás to zaujímalo, radi by sme sa s Vami spojili na krátky 15-minútový hovor v čase, ktorý Vám vyhovuje.
 > 
 > Ďakujem za Váš čas a teším sa na prípadnú odpoveď.
 > 
@@ -73,7 +73,7 @@ AI sleduje stav objednávok a automaticky informuje zákazníkov o priebehu ich 
 
 - Status: `ok`
 - Chyby / upozornenia: žiadne
-- Tokeny: 3462 vstup + 766 výstup (1× volanie) = $0.00098
+- Tokeny: 3544 vstup + 728 výstup (1× volanie) = $0.00097
 - Zdroje: <https://www.gesan.sk/>, <https://www.gesan.sk/kontakt/>, <https://www.gesan.sk/produkty/>, <https://api.statistics.sk/rpo/v1/entity/719708>
 
 </details>
@@ -94,44 +94,42 @@ AI sleduje stav objednávok a automaticky informuje zákazníkov o priebehu ich 
 
 ### Čo firma robí
 
-Bellesa je dermato-estetické a laserové centrum v Piešťanoch, ktoré poskytuje široké spektrum estetických ošetrení.
+Bellesa s.r.o. je moderné dermato-estetické a laserové centrum v Piešťanoch. Poskytujú široké spektrum estetických a laserových ošetrení na najvyššej medicínskej úrovni.
 
 ### Zistenia z webu
 
-- Bellesa ponúka estetické a laserové ošetrenia.
-- Služby zahŕňajú botulotoxín, mezoterapiu a laserovú epiláciu.
-- Zákazníci si môžu objednať služby online cez formulár.
-- Cenník ošetrení je dostupný na webe.
-- Platba je možná len v hotovosti.
-- Konzultácie prebiehajú s certifikovanými odborníkmi.
+- Bellesa s.r.o. je dermato-estetické a laserové centrum v Piešťanoch.
+- Ponúkajú široké spektrum laserových a estetických ošetrení.
+- Na webe majú online rezerváciu termínov a cenník služieb.
+- Klienti môžu objednávať cez e-mail, telefonicky alebo cez sociálne siete.
+- Na stránke sú zverejnené recenzie od spokojných zákazníkov.
+- Služby sú vedené certifikovanými odborníkmi s dlhoročnými skúsenosťami.
 
 ### 3 príležitosti na AI automatizáciu
 
 **1. Automatizácia potvrdení rezervácií** · 🟢 nízka · odhad 1–2 h týždenne pri ~10 rezerváciách po ~10 min
-Keď zákazník vyplní objednávkový formulár, AI automaticky potvrdí rezerváciu a zašle mu detaily o ošetrení.
-<br>_Prečo práve Vy:_ Na webe máte formulár na objednanie služieb.
+Keď klient rezervuje termín online, AI automaticky potvrdí rezerváciu a zašle podrobnosti o ošetrení.
+<br>_Prečo práve Vy:_ Na webe majú online rezerváciu termínov.
 
-**2. Automatizované pripomienky pred ošetrením** · 🟢 nízka · odhad 2–3 h týždenne pri ~15 pripomienkach po ~8 min
-AI môže posielať automatické pripomienky zákazníkom o nadchádzajúcich ošetreniach, čím zníži počet zmeškaných termínov.
-<br>_Prečo práve Vy:_ Na webe uvádzate, že je potrebné objednať sa 24 hodín vopred.
+**2. Automatizácia správy recenzií** · 🟡 stredná · odhad 2–3 h týždenne pri ~20 recenziách po ~6 min
+AI monitoruje recenzie a automaticky odpovedá na pozitívne a negatívne recenzie, čím zlepšuje komunikáciu so zákazníkmi.
+<br>_Prečo práve Vy:_ Na stránke sú zverejnené recenzie od spokojných zákazníkov.
 
-**3. Analýza recenzií klientov** · 🟡 stredná · odhad 3–5 h mesačne pri ~20 recenziách po ~15 min
-AI spracováva a analyzuje recenzie klientov, aby identifikovala silné a slabé stránky služieb a tímu.
-<br>_Prečo práve Vy:_ Na webe máte sekciu s recenziami od klientov.
+**3. Automatizácia sledovania dopytov** · 🟢 nízka · odhad 2–4 h týždenne pri ~15 dopytoch po ~10 min
+Keď klient pošle dopyt cez formulár, AI automaticky triedi dopyty a priraďuje ich správnemu odborníkovi.
+<br>_Prečo práve Vy:_ Klienti môžu objednávať cez e-mail, telefonicky alebo cez sociálne siete.
 
-### Návrh e-mailu (99 slov)
+### Návrh e-mailu (115 slov)
 
-**Predmet:** Nápady na automatizáciu pre Bellesa
+**Predmet:** Automatizácie pre Vašu kliniku
 
 > Dobrý deň,
 > 
-> Sme slovenská IT firma, ktorá sa špecializuje na AI automatizácie pre malé a stredné podniky. Chceli by sme Vám predstaviť niekoľko nápadov, ako by ste mohli zefektívniť Vaše služby.
+> Sme slovenská IT firma, ktorá pomáha malým a stredným firmám šetriť čas pomocou AI automatizácií. Zaznamenali sme, že ponúkate široké spektrum estetických a laserových ošetrení, čo je veľmi zaujímavé.
 > 
-> Zaznamenali sme, že ponúkate široké spektrum estetických a laserových ošetrení, pričom rezervácie sú možné online. Navrhujeme automatizáciu potvrdení rezervácií, čo by mohlo ušetriť 1–2 hodiny týždenne. Môžeme sa tiež pozrieť na automatizované pripomienky pre zákazníkov.
+> Radi by sme navrhli automatizáciu potvrdení rezervácií, ktorá by fungovala tak, že po online rezervácii by AI automaticky potvrdila termín a zaslala klientovi všetky potrebné informácie. Týmto by sa mohlo ušetriť 1-2 hodiny týždenne. Okrem toho by sme mohli zvážiť aj automatizáciu správy recenzií, čo by zefektívnilo Vašu komunikáciu so zákazníkmi.
 > 
-> Ak by Vás to zaujímalo, radi by sme sa s Vami spojili na krátky 15-minútový hovor v čase, ktorý Vám vyhovuje.
-> 
-> Ďakujem za Váš čas a teším sa na prípadnú odpoveď.
+> Ak by Vás to zaujímalo, radi by sme sa s Vami spojili na krátky 15-minútový hovor v čase, ktorý Vám vyhovuje. Ďakujem za Váš čas a teším sa na prípadnú odpoveď.
 > 
 > S pozdravom
 
@@ -139,7 +137,7 @@ AI spracováva a analyzuje recenzie klientov, aby identifikovala silné a slabé
 
 - Status: `ok`
 - Chyby / upozornenia: žiadne
-- Tokeny: 5368 vstup + 756 výstup (1× volanie) = $0.00126
+- Tokeny: 11816 vstup + 1585 výstup (2× volanie) = $0.00272
 - Zdroje: <https://bellesa.sk/>, <https://bellesa.sk/gdpr/>, <https://bellesa.sk/cennik-komplet/>, <https://bellesa.sk/ponuka-sluzby/>, <https://bellesa.sk/sluzby/laserove-osetrenia/>, <https://api.statistics.sk/rpo/v1/entity/9402056>
 
 </details>
@@ -156,48 +154,46 @@ AI spracováva a analyzuje recenzie klientov, aby identifikovala silné a slabé
 | **Právna forma** | Spoločnosť s ručením obmedzeným |
 | **Štatutári** | Mgr. Barbora Boboková (konateľ) |
 | **Kontakt na webe** | info@serviskavovary.sk, 0903608833, +421903808833 |
-| **Odvetvie** | Servis a predaj kávovarov |
+| **Odvetvie** | Servis kávovarov |
 
 ### Čo firma robí
 
-Firma poskytuje servis a opravy kávovarov, ako aj predaj kávy a príslušenstva. Zameriava sa na profesionálnych a automatických kávovarov.
+Firma sa zaoberá servisom a opravou kávovarov, predajom repasovaných kávovarov a príslušenstva. Poskytujú služby pre domácnosti a firmy v oblasti údržby a opravy kávovarov.
 
 ### Zistenia z webu
 
-- Servis kávovarov s dôrazom na diagnostiku a opravy.
-- Možnosť doručenia kávovaru osobne alebo cez kuriéra.
-- Servisný formulár na objednanie opravy kávovaru online.
-- Opravy väčšinou do 1 týždňa, ak nie sú potrebné špecifické diely.
-- Možnosť objednať základnú a rozšírenú údržbu kávovarov.
-- Newsletter na odoberanie noviniek a akcií. 
+- Zabezpečujú servis a opravy kávovarov.
+- Ponúkajú repasované kávovary a príslušenstvo.
+- Zákazníci môžu kontaktovať firmu telefonicky alebo e-mailom.
+- Na webe je dostupný servisný formulár na objednávku.
+- Opravy realizujú väčšinou do 1 týždňa.
+- Možnosť objednať kuriéra na vyzdvihnutie kávovaru.
 
 ### 3 príležitosti na AI automatizáciu
 
-**1. Automatizácia správy servisných dopytov** · 🟢 nízka · odhad 3–5 h týždenne pri ~20 dopytoch po ~15 min
-Keď zákazník vyplní servisný formulár, AI automaticky spracuje údaje a priradí ich k technikovi na opravu.
-<br>_Prečo práve Vy:_ Na webe máte servisný formulár na objednanie opravy.
+**1. Automatizácia spracovania servisných formulárov** · 🟢 nízka · odhad 3–5 h týždenne pri ~10 formulároch po ~20 min
+Keď zákazník vyplní servisný formulár, AI automaticky spracuje údaje a vytvorí interný tiket pre technika.
+<br>_Prečo práve Vy:_ Na webe je dostupný servisný formulár na objednávku.
 
-**2. Automatické pripomienky na údržbu** · 🟢 nízka · odhad 1–2 h týždenne pri ~10 zákazníkoch po ~10 min
-AI generuje a odosiela pripomienky zákazníkom na plánovanú údržbu kávovarov na základe ich predchádzajúcich služieb.
-<br>_Prečo práve Vy:_ Ponúkate základnú a rozšírenú údržbu kávovarov.
+**2. Automatické pripomienky na údržbu** · 🟢 nízka · odhad 1–2 h týždenne pri ~20 zákazníkoch po ~5 min
+AI môže sledovať termíny údržby a automaticky posielať pripomienky zákazníkom.
+<br>_Prečo práve Vy:_ Zákazníci potrebujú pravidelnú údržbu kávovarov.
 
-**3. Analýza spätnej väzby od zákazníkov** · 🟡 stredná · odhad 2–4 h týždenne pri ~5 recenziách po ~30 min
-AI zhromažďuje a analyzuje recenzie a spätnú väzbu od zákazníkov, aby identifikovala oblasti na zlepšenie služieb.
-<br>_Prečo práve Vy:_ Na webe je možnosť registrácie na newsletter a získavanie noviniek.
+**3. Zefektívnenie komunikácie so zákazníkmi** · 🟡 stredná · odhad 2–4 h týždenne pri ~15 dopytoch po ~10 min
+AI môže spracovávať bežné otázky zákazníkov a poskytovať odpovede na základe FAQ.
+<br>_Prečo práve Vy:_ Na webe sú kontaktné údaje a možnosť kontaktovať firmu.
 
-### Návrh e-mailu (97 slov)
+### Návrh e-mailu (108 slov)
 
-**Predmet:** Nápady na automatizáciu pre Vašu firmu
+**Predmet:** Nápady na automatizáciu pre Vás
 
 > Dobrý deň,
 > 
-> Sme slovenská IT firma, ktorá sa zaoberá AI automatizáciami pre malé a stredné podniky. Rád by som Vám predstavil niekoľko nápadov, ako by ste mohli zefektívniť Vaše služby.
+> Sme slovenská IT firma, ktorá sa špecializuje na AI automatizácie pre malé a stredné podniky. Radi by sme Vám predstavili niekoľko nápadov na zefektívnenie Vašich procesov, ktoré by mohli výrazne uľahčiť Vašu prácu.
 > 
-> Zaznamenal som, že máte online servisný formulár na objednanie opravy kávovarov. Môžeme automatizovať spracovanie týchto dopytov, čo by Vám ušetrilo 3-5 hodín týždenne. Zároveň by sme mohli nastaviť automatické pripomienky na údržbu kávovarov.
+> Na webe máte servisný formulár, ktorý by mohol byť automatizovaný. Keď zákazník vyplní formulár, AI spracuje údaje a vytvorí tiket pre technika, čo by Vám ušetrilo 3–5 hodín týždenne. Taktiež môžeme navrhnúť automatické pripomienky na údržbu pre Vašich zákazníkov, čím ušetríte ďalšie 1–2 hodiny týždenne.
 > 
-> Ak by Vás to zaujímalo, rád by som sa s Vami spojil na krátky 15-minútový hovor, kedykoľvek to bude pre Vás vhodné.
-> 
-> Ďakujem za Váš čas a teším sa na prípadnú odpoveď.
+> Ak by Vás to zaujímalo, radi by sme sa s Vami spojili na krátky 15-minútový hovor. Ďakujem za Váš čas a teším sa na prípadnú odpoveď.
 > 
 > S pozdravom
 
@@ -205,7 +201,7 @@ AI zhromažďuje a analyzuje recenzie a spätnú väzbu od zákazníkov, aby ide
 
 - Status: `ok`
 - Chyby / upozornenia: žiadne
-- Tokeny: 3382 vstup + 792 výstup (1× volanie) = $0.00098
+- Tokeny: 7808 vstup + 1511 výstup (2× volanie) = $0.00208
 - Zdroje: <https://www.serviskavovary.sk/>, <https://www.serviskavovary.sk/stranka/kontakt/>, <https://www.serviskavovary.sk/stranka/vop/>, <https://www.serviskavovary.sk/stranka/servis-kavovarov/>, <https://www.serviskavovary.sk/stranka/servisny-formular/>, <https://api.statistics.sk/rpo/v1/entity/258444>
 
 </details>
