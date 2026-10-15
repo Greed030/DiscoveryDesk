@@ -1,0 +1,126 @@
+{
+  "domena": "bellesa.sk",
+  "status": "ok",
+  "firma": {
+    "nazov": {
+      "value": "Bellesa s.r.o.",
+      "source": "rpo",
+      "verified": true
+    },
+    "ico": {
+      "value": "51241935",
+      "source": "web+rpo",
+      "verified": true,
+      "url": "https://bellesa.sk/gdpr/"
+    },
+    "sidlo": {
+      "value": "Majer 1007/293, 922 41 Drahovce",
+      "source": "rpo",
+      "verified": true
+    },
+    "pravna_forma": {
+      "value": "Spoločnosť s ručením obmedzeným",
+      "source": "rpo",
+      "verified": true
+    },
+    "datum_vzniku": {
+      "value": "2017-12-30",
+      "source": "rpo",
+      "verified": true
+    },
+    "statutari": {
+      "value": [
+        "MUDr. Svetlana Šefčíková (konateľ)"
+      ],
+      "source": "rpo",
+      "verified": true
+    },
+    "byvale_nazvy": null,
+    "nazov_na_webe": {
+      "value": "Bellesa s.r.o.",
+      "source": "web",
+      "url": "https://bellesa.sk/gdpr/"
+    },
+    "adresa_na_webe": {
+      "value": "Nám. J. Murgaša 1, 921 01 Piešťany",
+      "source": "web",
+      "url": "https://bellesa.sk/",
+      "verified": false
+    },
+    "kontakt_na_webe": {
+      "emaily": [
+        "objednavky@bellesa.sk"
+      ],
+      "telefony": [
+        "+421918853092"
+      ],
+      "source": "web"
+    },
+    "rpo_url": "https://api.statistics.sk/rpo/v1/entity/9402056"
+  },
+  "popis": {
+    "value": "Bellesa je dermato-estetické a laserové centrum v Piešťanoch, ktoré poskytuje široké spektrum estetických ošetrení.",
+    "source": "ai (text webu + RPO)",
+    "kvalita_podkladov": "dostatočné",
+    "odvetvie": "Estetická medicína"
+  },
+  "zistenia": {
+    "value": [
+      "Bellesa ponúka estetické a laserové ošetrenia.",
+      "Služby zahŕňajú botulotoxín, mezoterapiu a laserovú epiláciu.",
+      "Zákazníci si môžu objednať služby online cez formulár.",
+      "Cenník ošetrení je dostupný na webe.",
+      "Platba je možná len v hotovosti.",
+      "Konzultácie prebiehajú s certifikovanými odborníkmi."
+    ],
+    "source": "ai (fakty z textu webu)"
+  },
+  "prilezitosti": [
+    {
+      "nazov": "Automatizácia potvrdení rezervácií",
+      "co_sa_automatizuje": "Keď zákazník vyplní objednávkový formulár, AI automaticky potvrdí rezerváciu a zašle mu detaily o ošetrení.",
+      "uspora_casu": "odhad 1–2 h týždenne pri ~10 rezerváciách po ~10 min",
+      "narocnost": "nízka",
+      "preco_prave_vy": "Na webe máte formulár na objednanie služieb."
+    },
+    {
+      "nazov": "Automatizované pripomienky pred ošetrením",
+      "co_sa_automatizuje": "AI môže posielať automatické pripomienky zákazníkom o nadchádzajúcich ošetreniach, čím zníži počet zmeškaných termínov.",
+      "uspora_casu": "odhad 2–3 h týždenne pri ~15 pripomienkach po ~8 min",
+      "narocnost": "nízka",
+      "preco_prave_vy": "Na webe uvádzate, že je potrebné objednať sa 24 hodín vopred."
+    },
+    {
+      "nazov": "Analýza recenzií klientov",
+      "co_sa_automatizuje": "AI spracováva a analyzuje recenzie klientov, aby identifikovala silné a slabé stránky služieb a tímu.",
+      "uspora_casu": "odhad 3–5 h mesačne pri ~20 recenziách po ~15 min",
+      "narocnost": "stredná",
+      "preco_prave_vy": "Na webe máte sekciu s recenziami od klientov."
+    }
+  ],
+  "email": {
+    "predmet": "Nápady na automatizáciu pre Bellesa",
+    "text": "Dobrý deň,\n\nSme slovenská IT firma, ktorá sa špecializuje na AI automatizácie pre malé a stredné podniky. Chceli by sme Vám predstaviť niekoľko nápadov, ako by ste mohli zefektívniť Vaše služby.\n\nZaznamenali sme, že ponúkate široké spektrum estetických a laserových ošetrení, pričom rezervácie sú možné online. Navrhujeme automatizáciu potvrdení rezervácií, čo by mohlo ušetriť 1–2 hodiny týždenne. Môžeme sa tiež pozrieť na automatizované pripomienky pre zákazníkov.\n\nAk by Vás to zaujímalo, radi by sme sa s Vami spojili na krátky 15-minútový hovor v čase, ktorý Vám vyhovuje.\n\nĎakujem za Váš čas a teším sa na prípadnú odpoveď.\n\nS pozdravom",
+    "pocet_slov": 99,
+    "source": "ai"
+  },
+  "chyby": [],
+  "zdroje": [
+    "https://bellesa.sk/",
+    "https://bellesa.sk/gdpr/",
+    "https://bellesa.sk/cennik-komplet/",
+    "https://bellesa.sk/ponuka-sluzby/",
+    "https://bellesa.sk/sluzby/laserove-osetrenia/",
+    "https://api.statistics.sk/rpo/v1/entity/9402056"
+  ],
+  "tokeny": {
+    "vstup": 5368,
+    "vystup": 756,
+    "cache": 0,
+    "volania": 1,
+    "spolu": 6124,
+    "model": "gpt-4o-mini-2024-07-18",
+    "cena_usd": 0.001259
+  },
+  "timestamp": "2026-10-15T11:05:53.200Z"
+}

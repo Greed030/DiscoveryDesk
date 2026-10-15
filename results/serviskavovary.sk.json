@@ -1,0 +1,127 @@
+{
+  "domena": "serviskavovary.sk",
+  "status": "ok",
+  "firma": {
+    "nazov": {
+      "value": "COFFIX s. r. o.",
+      "source": "rpo",
+      "verified": true
+    },
+    "ico": {
+      "value": "48261068",
+      "source": "web+rpo",
+      "verified": true,
+      "url": "https://www.serviskavovary.sk/stranka/kontakt/"
+    },
+    "sidlo": {
+      "value": "Kvetná 3111/7A, 903 01 Senec",
+      "source": "rpo",
+      "verified": true
+    },
+    "pravna_forma": {
+      "value": "Spoločnosť s ručením obmedzeným",
+      "source": "rpo",
+      "verified": true
+    },
+    "datum_vzniku": {
+      "value": "2015-08-07",
+      "source": "rpo",
+      "verified": true
+    },
+    "statutari": {
+      "value": [
+        "Mgr. Barbora Boboková (konateľ)"
+      ],
+      "source": "rpo",
+      "verified": true
+    },
+    "byvale_nazvy": null,
+    "nazov_na_webe": {
+      "value": "COFFIX s.r.o.",
+      "source": "web",
+      "url": "https://www.serviskavovary.sk/"
+    },
+    "adresa_na_webe": {
+      "value": "Zadunajská cesta 12, 851 01 Bratislava",
+      "source": "web",
+      "url": "https://www.serviskavovary.sk/",
+      "verified": false
+    },
+    "kontakt_na_webe": {
+      "emaily": [
+        "info@serviskavovary.sk"
+      ],
+      "telefony": [
+        "0903608833",
+        "+421903808833"
+      ],
+      "source": "web"
+    },
+    "rpo_url": "https://api.statistics.sk/rpo/v1/entity/258444"
+  },
+  "popis": {
+    "value": "Firma poskytuje servis a opravy kávovarov, ako aj predaj kávy a príslušenstva. Zameriava sa na profesionálnych a automatických kávovarov.",
+    "source": "ai (text webu + RPO)",
+    "kvalita_podkladov": "dostatočné",
+    "odvetvie": "Servis a predaj kávovarov"
+  },
+  "zistenia": {
+    "value": [
+      "Servis kávovarov s dôrazom na diagnostiku a opravy.",
+      "Možnosť doručenia kávovaru osobne alebo cez kuriéra.",
+      "Servisný formulár na objednanie opravy kávovaru online.",
+      "Opravy väčšinou do 1 týždňa, ak nie sú potrebné špecifické diely.",
+      "Možnosť objednať základnú a rozšírenú údržbu kávovarov.",
+      "Newsletter na odoberanie noviniek a akcií. "
+    ],
+    "source": "ai (fakty z textu webu)"
+  },
+  "prilezitosti": [
+    {
+      "nazov": "Automatizácia správy servisných dopytov",
+      "co_sa_automatizuje": "Keď zákazník vyplní servisný formulár, AI automaticky spracuje údaje a priradí ich k technikovi na opravu.",
+      "uspora_casu": "odhad 3–5 h týždenne pri ~20 dopytoch po ~15 min",
+      "narocnost": "nízka",
+      "preco_prave_vy": "Na webe máte servisný formulár na objednanie opravy."
+    },
+    {
+      "nazov": "Automatické pripomienky na údržbu",
+      "co_sa_automatizuje": "AI generuje a odosiela pripomienky zákazníkom na plánovanú údržbu kávovarov na základe ich predchádzajúcich služieb.",
+      "uspora_casu": "odhad 1–2 h týždenne pri ~10 zákazníkoch po ~10 min",
+      "narocnost": "nízka",
+      "preco_prave_vy": "Ponúkate základnú a rozšírenú údržbu kávovarov."
+    },
+    {
+      "nazov": "Analýza spätnej väzby od zákazníkov",
+      "co_sa_automatizuje": "AI zhromažďuje a analyzuje recenzie a spätnú väzbu od zákazníkov, aby identifikovala oblasti na zlepšenie služieb.",
+      "uspora_casu": "odhad 2–4 h týždenne pri ~5 recenziách po ~30 min",
+      "narocnost": "stredná",
+      "preco_prave_vy": "Na webe je možnosť registrácie na newsletter a získavanie noviniek."
+    }
+  ],
+  "email": {
+    "predmet": "Nápady na automatizáciu pre Vašu firmu",
+    "text": "Dobrý deň,\n\nSme slovenská IT firma, ktorá sa zaoberá AI automatizáciami pre malé a stredné podniky. Rád by som Vám predstavil niekoľko nápadov, ako by ste mohli zefektívniť Vaše služby.\n\nZaznamenal som, že máte online servisný formulár na objednanie opravy kávovarov. Môžeme automatizovať spracovanie týchto dopytov, čo by Vám ušetrilo 3-5 hodín týždenne. Zároveň by sme mohli nastaviť automatické pripomienky na údržbu kávovarov.\n\nAk by Vás to zaujímalo, rád by som sa s Vami spojil na krátky 15-minútový hovor, kedykoľvek to bude pre Vás vhodné.\n\nĎakujem za Váš čas a teším sa na prípadnú odpoveď.\n\nS pozdravom",
+    "pocet_slov": 97,
+    "source": "ai"
+  },
+  "chyby": [],
+  "zdroje": [
+    "https://www.serviskavovary.sk/",
+    "https://www.serviskavovary.sk/stranka/kontakt/",
+    "https://www.serviskavovary.sk/stranka/vop/",
+    "https://www.serviskavovary.sk/stranka/servis-kavovarov/",
+    "https://www.serviskavovary.sk/stranka/servisny-formular/",
+    "https://api.statistics.sk/rpo/v1/entity/258444"
+  ],
+  "tokeny": {
+    "vstup": 3382,
+    "vystup": 792,
+    "cache": 1024,
+    "volania": 1,
+    "spolu": 4174,
+    "model": "gpt-4o-mini-2024-07-18",
+    "cena_usd": 0.000983
+  },
+  "timestamp": "2026-10-15T11:06:02.579Z"
+}

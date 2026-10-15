@@ -1,0 +1,126 @@
+{
+  "domena": "gesan.sk",
+  "status": "ok",
+  "firma": {
+    "nazov": {
+      "value": "GESAN s. r. o.",
+      "source": "rpo",
+      "verified": true
+    },
+    "ico": {
+      "value": "44753152",
+      "source": "web+rpo",
+      "verified": true,
+      "url": "https://www.gesan.sk/kontakt/"
+    },
+    "sidlo": {
+      "value": "Výtvarná 19, 821 06 Bratislava",
+      "source": "rpo",
+      "verified": true
+    },
+    "pravna_forma": {
+      "value": "Spoločnosť s ručením obmedzeným",
+      "source": "rpo",
+      "verified": true
+    },
+    "datum_vzniku": {
+      "value": "2009-05-07",
+      "source": "rpo",
+      "verified": true
+    },
+    "statutari": {
+      "value": [
+        "Ing. Tibor Šallay (konateľ)",
+        "Igor Šallay (konateľ)"
+      ],
+      "source": "rpo",
+      "verified": true
+    },
+    "byvale_nazvy": null,
+    "nazov_na_webe": {
+      "value": "GESAN s.r.o.",
+      "source": "web",
+      "url": "https://www.gesan.sk/"
+    },
+    "adresa_na_webe": {
+      "value": "Dvojkrížna 28, 821 06 Bratislava",
+      "source": "web",
+      "url": "https://www.gesan.sk/",
+      "verified": false
+    },
+    "kontakt_na_webe": {
+      "emaily": [
+        "gesan@gesan.sk"
+      ],
+      "telefony": [
+        "+421245243139",
+        "+421905448364"
+      ],
+      "source": "web"
+    },
+    "rpo_url": "https://api.statistics.sk/rpo/v1/entity/719708"
+  },
+  "popis": {
+    "value": "GESAN s.r.o. sa zaoberá profesionálnym laserovým a CNC gravírovaním. Ich zákazníkmi sú firmy, ktoré potrebujú štítky a gravírovanie na mieru.",
+    "source": "ai (text webu + RPO)",
+    "kvalita_podkladov": "dostatočné",
+    "odvetvie": "Gravírovanie a kovovýroba"
+  },
+  "zistenia": {
+    "value": [
+      "Firma ponúka profesionálne laserové a CNC gravírovanie.",
+      "Zákazníci môžu objednávať cez e-mail a telefonicky.",
+      "Na webe majú uvedené kontaktné údaje a otváracie hodiny.",
+      "Ponúkajú široké spektrum produktov ako štítky a gravírovanie reklamných predmetov.",
+      "Vyrábajú priemyselné a eloxované štítky na mieru.",
+      "Poskytujú služby pre firmy v oblasti gravírovania a kovovýroby."
+    ],
+    "source": "ai (fakty z textu webu)"
+  },
+  "prilezitosti": [
+    {
+      "nazov": "Automatizácia spracovania objednávok",
+      "co_sa_automatizuje": "Keď zákazník pošle dopyt e-mailom, AI automaticky spracuje objednávku a pripraví odpoveď s cenou a termínom dodania.",
+      "uspora_casu": "odhad 3–5 h týždenne pri ~10 dopytoch po ~20 min",
+      "narocnost": "nízka",
+      "preco_prave_vy": "Zákazníci môžu objednávať cez e-mail."
+    },
+    {
+      "nazov": "Automatizácia cenových ponúk",
+      "co_sa_automatizuje": "AI analyzuje dopyty a automaticky generuje cenové ponuky na základe preddefinovaných parametrov.",
+      "uspora_casu": "odhad 2–4 h týždenne pri ~5 dopytoch po ~30 min",
+      "narocnost": "stredná",
+      "preco_prave_vy": "Ponúkajú široké spektrum produktov ako štítky a gravírovanie."
+    },
+    {
+      "nazov": "Automatizácia sledovania objednávok",
+      "co_sa_automatizuje": "AI sleduje stav objednávok a automaticky informuje zákazníkov o priebehu ich realizácie.",
+      "uspora_casu": "odhad 1–2 h týždenne pri ~10 objednávkach po ~10 min",
+      "narocnost": "nízka",
+      "preco_prave_vy": "Zákazníci môžu objednávať cez e-mail a telefonicky."
+    }
+  ],
+  "email": {
+    "predmet": "Nápady na automatizáciu pre GESAN",
+    "text": "Dobrý deň,\n\nSme slovenská IT firma, ktorá sa špecializuje na AI automatizácie pre malé a stredné podniky. Zaznamenali sme, že ponúkate profesionálne laserové a CNC gravírovanie, čo je veľmi zaujímavé.\n\nMám konkrétny nápad na automatizáciu spracovania objednávok, kde by AI mohla spracovať e-mailové dopyty a pripraviť odpovede s cenami. Odhadujeme, že by to mohlo ušetriť 3–5 hodín týždenne. Rád by som sa s Vami porozprával aj o ďalších možnostiach.\n\nAk by Vás to zaujímalo, rád by som si s Vami dohodol krátky 15-minútový hovor. \n\nĎakujem za Váš čas a teším sa na prípadnú odpoveď.\n\nS pozdravom",
+    "pocet_slov": 96,
+    "source": "ai"
+  },
+  "chyby": [],
+  "zdroje": [
+    "https://www.gesan.sk/",
+    "https://www.gesan.sk/kontakt/",
+    "https://www.gesan.sk/produkty/",
+    "https://api.statistics.sk/rpo/v1/entity/719708"
+  ],
+  "tokeny": {
+    "vstup": 3462,
+    "vystup": 766,
+    "cache": 0,
+    "volania": 1,
+    "spolu": 4228,
+    "model": "gpt-4o-mini-2024-07-18",
+    "cena_usd": 0.000979
+  },
+  "timestamp": "2026-10-15T11:05:38.603Z"
+}

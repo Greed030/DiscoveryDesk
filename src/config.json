@@ -1,0 +1,18 @@
+{
+  "domeny": "gesan.sk, bellesa.sk, serviskavovary.sk",
+  "model": "gpt-4o-mini",
+  "cena_vstup_usd_1m": 0.15,
+  "cena_vystup_usd_1m": 0.6,
+  "ai_api_url": "https://api.openai.com/v1/chat/completions",
+  "google_sheet": "",
+  "preskocit_spracovane": true,
+  "opakovat_statusy": "web_unreachable, rpo_timeout, ai_error, internal_error",
+  "max_slov_email": 120,
+  "min_slov_email": 90,
+  "odosielatel": "Sme slovenská IT firma, ktorá pomáha malým a stredným firmám šetriť čas pomocou AI automatizácií (spracovanie dopytov, objednávok, dokumentov a komunikácie so zákazníkmi).",
+  "max_podstranok": 8,
+  "max_znakov_ai": 24000,
+  "web_timeout_ms": 20000,
+  "rpo_timeout_ms": 90000,
+  "pouzit_jina": true
+}

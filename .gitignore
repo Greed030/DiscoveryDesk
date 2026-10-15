@@ -1,0 +1,7 @@
+# lokálne debug výstupy testovacieho stendu (texty webov, prompty)
+test/out/
+node_modules/
+.env
+*.log
+.DS_Store
+Thumbs.db
