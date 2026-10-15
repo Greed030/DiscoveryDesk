@@ -1,5 +1,7 @@
 # DiscoveryDesk
 
+🇸🇰 **Slovensky** · 🇬🇧 [English](README.en.md)
+
 **Z domény slovenskej firmy pripraví za minútu overený podklad pre obchodníka:** kto firma je (IČO a sídlo overené v registri RPO), čo robí, 3 konkrétne príležitosti na AI automatizáciu a zdvorilý úvodný e-mail.
 
 Riešenie testového zadania **„Mini AI Discovery“** · n8n workflow · OpenAI `gpt-4o-mini` · register RPO · Google Sheets
